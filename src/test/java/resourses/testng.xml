@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite" parallel="classes" thread-count="2">
+    <test name="test 1">
+        <classes>
+            <class name="testng.tests.DataProviderTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="test 2">
+        <classes>
+            <class name="testng.tests.DescriptionTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="test 3">
+        <classes>
+            <class name="testng.tests.RetryTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="test 4">
+        <classes>
+            <class name="testng.tests.ParametersTest"/>
+            <parameter name="a" value="4"></parameter>
+            <parameter name="b" value="4"></parameter>
+            <parameter name="expectedSum" value="16"></parameter>
+        </classes>
+    </test> <!-- Test -->
+
+</suite>
+
